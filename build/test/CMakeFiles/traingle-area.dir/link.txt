@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/traingle-area.dir/traingle-area.c.o  -o traingle-area  -L/usr/local/lib 

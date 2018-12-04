@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/two-shuzu.dir/two-shuzu.cpp.o  -o two-shuzu  -L/usr/local/lib 

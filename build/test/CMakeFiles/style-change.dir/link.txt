@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/style-change.dir/style-change.c.o  -o style-change  -L/usr/local/lib 

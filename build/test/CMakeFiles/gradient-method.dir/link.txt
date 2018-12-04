@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/gradient-method.dir/gradient-method.cpp.o  -o gradient-method  -L/usr/local/lib 

@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/yunsuan.dir/yunsuan.c.o  -o yunsuan  -L/usr/local/lib 

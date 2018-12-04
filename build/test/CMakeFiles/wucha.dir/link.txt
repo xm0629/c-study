@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/wucha.dir/wucha.c.o  -o wucha  -L/usr/local/lib 

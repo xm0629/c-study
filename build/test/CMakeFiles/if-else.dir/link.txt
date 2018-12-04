@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/if-else.dir/if-else.c.o  -o if-else  -L/usr/local/lib 

@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/com-max-test.dir/com-max-test.cpp.o  -o com-max-test  -L/usr/local/lib 

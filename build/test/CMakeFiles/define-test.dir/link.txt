@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/define-test.dir/define-test.c.o  -o define-test  -L/usr/local/lib 

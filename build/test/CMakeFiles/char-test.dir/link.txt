@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/char-test.dir/char-test.c.o  -o char-test  -L/usr/local/lib 

@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/class_student.dir/class_student.cpp.o  -o class_student  -L/usr/local/lib 

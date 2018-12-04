@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/getchar.dir/getchar.c.o  -o getchar  -L/usr/local/lib 

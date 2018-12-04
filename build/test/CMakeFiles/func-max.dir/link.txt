@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/func-max.dir/func-max.cpp.o  -o func-max  -L/usr/local/lib 

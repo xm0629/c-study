@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/N-jiecheng.dir/N-jiecheng.cpp.o  -o N-jiecheng  -L/usr/local/lib 

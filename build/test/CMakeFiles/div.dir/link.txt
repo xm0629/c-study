@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/div.dir/div.c.o  -o div  -L/usr/local/lib 

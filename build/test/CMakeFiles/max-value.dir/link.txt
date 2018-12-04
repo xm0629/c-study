@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/max-value.dir/max-value.cpp.o  -o max-value  -L/usr/local/lib 

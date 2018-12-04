@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/func-inline.dir/func-inline.cpp.o  -o func-inline  -L/usr/local/lib 

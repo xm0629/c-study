@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/cout-matrix.dir/cout-matrix.cpp.o  -o cout-matrix  -L/usr/local/lib 

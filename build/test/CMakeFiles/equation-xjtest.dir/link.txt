@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/equation-xjtest.dir/equation-xjtest.cpp.o  -o equation-xjtest  -L/usr/local/lib 

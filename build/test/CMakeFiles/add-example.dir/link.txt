@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/add-example.dir/add-example.c.o  -o add-example  -L/usr/local/lib 

@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/3.19.dir/3.19.c.o  -o 3.19  -L/usr/local/lib 

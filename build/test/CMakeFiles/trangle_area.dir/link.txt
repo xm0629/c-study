@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/trangle_area.dir/trangle_area.cpp.o  -o trangle_area  -L/usr/local/lib 

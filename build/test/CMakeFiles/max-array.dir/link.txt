@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/max-array.dir/max-array.cpp.o  -o max-array  -L/usr/local/lib 

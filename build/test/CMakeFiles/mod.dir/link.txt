@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/mod.dir/mod.c.o  -o mod  -L/usr/local/lib 
