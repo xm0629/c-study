@@ -81,13 +81,13 @@ src/preinstall:
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
-test/all: test/CMakeFiles/7.1.dir/all
+test/all: test/CMakeFiles/srrstruc.dir/all
 test/all: test/CMakeFiles/CGAL_test.dir/all
 
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
-test/clean: test/CMakeFiles/7.1.dir/clean
+test/clean: test/CMakeFiles/srrstruc.dir/clean
 test/clean: test/CMakeFiles/CGAL_test.dir/clean
 
 .PHONY : test/clean
@@ -98,39 +98,39 @@ test/preinstall:
 .PHONY : test/preinstall
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/7.1.dir
+# Target rules for target test/CMakeFiles/srrstruc.dir
 
 # All Build rule for target.
-test/CMakeFiles/7.1.dir/all:
-	$(MAKE) -f test/CMakeFiles/7.1.dir/build.make test/CMakeFiles/7.1.dir/depend
-	$(MAKE) -f test/CMakeFiles/7.1.dir/build.make test/CMakeFiles/7.1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/Program/c-study/build/CMakeFiles --progress-num=1,2 "Built target 7.1"
-.PHONY : test/CMakeFiles/7.1.dir/all
+test/CMakeFiles/srrstruc.dir/all:
+	$(MAKE) -f test/CMakeFiles/srrstruc.dir/build.make test/CMakeFiles/srrstruc.dir/depend
+	$(MAKE) -f test/CMakeFiles/srrstruc.dir/build.make test/CMakeFiles/srrstruc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/Program/c-study/build/CMakeFiles --progress-num=3,4 "Built target srrstruc"
+.PHONY : test/CMakeFiles/srrstruc.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/7.1.dir/all
+all: test/CMakeFiles/srrstruc.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/7.1.dir/rule: cmake_check_build_system
+test/CMakeFiles/srrstruc.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/Program/c-study/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/7.1.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/srrstruc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/Program/c-study/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/7.1.dir/rule
+.PHONY : test/CMakeFiles/srrstruc.dir/rule
 
 # Convenience name for target.
-7.1: test/CMakeFiles/7.1.dir/rule
+srrstruc: test/CMakeFiles/srrstruc.dir/rule
 
-.PHONY : 7.1
-
-# clean rule for target.
-test/CMakeFiles/7.1.dir/clean:
-	$(MAKE) -f test/CMakeFiles/7.1.dir/build.make test/CMakeFiles/7.1.dir/clean
-.PHONY : test/CMakeFiles/7.1.dir/clean
+.PHONY : srrstruc
 
 # clean rule for target.
-clean: test/CMakeFiles/7.1.dir/clean
+test/CMakeFiles/srrstruc.dir/clean:
+	$(MAKE) -f test/CMakeFiles/srrstruc.dir/build.make test/CMakeFiles/srrstruc.dir/clean
+.PHONY : test/CMakeFiles/srrstruc.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/srrstruc.dir/clean
 
 .PHONY : clean
 
@@ -141,7 +141,7 @@ clean: test/CMakeFiles/7.1.dir/clean
 test/CMakeFiles/CGAL_test.dir/all:
 	$(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/depend
 	$(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/Program/c-study/build/CMakeFiles --progress-num=3,4 "Built target CGAL_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/Program/c-study/build/CMakeFiles --progress-num=1,2 "Built target CGAL_test"
 .PHONY : test/CMakeFiles/CGAL_test.dir/all
 
 # Include target in all.

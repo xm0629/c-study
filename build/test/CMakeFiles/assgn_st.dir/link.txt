@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/assgn_st.dir/assgn_st.cpp.o  -o assgn_st  -L/usr/local/lib 

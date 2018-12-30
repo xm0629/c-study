@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/xm/Program/c-study/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -79,6 +67,18 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # Special rule for the target install
 install: preinstall
@@ -157,19 +157,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/7.1.dir/rule:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/7.1.dir/rule
-.PHONY : test/CMakeFiles/7.1.dir/rule
+test/CMakeFiles/srrstruc.dir/rule:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/srrstruc.dir/rule
+.PHONY : test/CMakeFiles/srrstruc.dir/rule
 
 # Convenience name for target.
-7.1: test/CMakeFiles/7.1.dir/rule
+srrstruc: test/CMakeFiles/srrstruc.dir/rule
 
-.PHONY : 7.1
+.PHONY : srrstruc
 
 # fast build rule for target.
-7.1/fast:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/7.1.dir/build.make test/CMakeFiles/7.1.dir/build
-.PHONY : 7.1/fast
+srrstruc/fast:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/srrstruc.dir/build.make test/CMakeFiles/srrstruc.dir/build
+.PHONY : srrstruc/fast
 
 # Convenience name for target.
 test/CMakeFiles/CGAL_test.dir/rule:
@@ -185,33 +185,6 @@ CGAL_test: test/CMakeFiles/CGAL_test.dir/rule
 CGAL_test/fast:
 	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/build
 .PHONY : CGAL_test/fast
-
-7.1.o: 7.1.c.o
-
-.PHONY : 7.1.o
-
-# target to build an object file
-7.1.c.o:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/7.1.dir/build.make test/CMakeFiles/7.1.dir/7.1.c.o
-.PHONY : 7.1.c.o
-
-7.1.i: 7.1.c.i
-
-.PHONY : 7.1.i
-
-# target to preprocess a source file
-7.1.c.i:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/7.1.dir/build.make test/CMakeFiles/7.1.dir/7.1.c.i
-.PHONY : 7.1.c.i
-
-7.1.s: 7.1.c.s
-
-.PHONY : 7.1.s
-
-# target to generate assembly for a file
-7.1.c.s:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/7.1.dir/build.make test/CMakeFiles/7.1.dir/7.1.c.s
-.PHONY : 7.1.c.s
 
 CGAL_test.o: CGAL_test.cpp.o
 
@@ -240,26 +213,53 @@ CGAL_test.cpp.s:
 	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.s
 .PHONY : CGAL_test.cpp.s
 
+srrstruc.o: srrstruc.cpp.o
+
+.PHONY : srrstruc.o
+
+# target to build an object file
+srrstruc.cpp.o:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/srrstruc.dir/build.make test/CMakeFiles/srrstruc.dir/srrstruc.cpp.o
+.PHONY : srrstruc.cpp.o
+
+srrstruc.i: srrstruc.cpp.i
+
+.PHONY : srrstruc.i
+
+# target to preprocess a source file
+srrstruc.cpp.i:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/srrstruc.dir/build.make test/CMakeFiles/srrstruc.dir/srrstruc.cpp.i
+.PHONY : srrstruc.cpp.i
+
+srrstruc.s: srrstruc.cpp.s
+
+.PHONY : srrstruc.s
+
+# target to generate assembly for a file
+srrstruc.cpp.s:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/srrstruc.dir/build.make test/CMakeFiles/srrstruc.dir/srrstruc.cpp.s
+.PHONY : srrstruc.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... 7.1"
+	@echo "... install/strip"
+	@echo "... srrstruc"
 	@echo "... install"
 	@echo "... CGAL_test"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
-	@echo "... 7.1.o"
-	@echo "... 7.1.i"
-	@echo "... 7.1.s"
 	@echo "... CGAL_test.o"
 	@echo "... CGAL_test.i"
 	@echo "... CGAL_test.s"
+	@echo "... srrstruc.o"
+	@echo "... srrstruc.i"
+	@echo "... srrstruc.s"
 .PHONY : help
 
 

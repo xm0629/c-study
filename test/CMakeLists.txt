@@ -4,5 +4,5 @@ if(HAVE_CGAL)
     target_link_libraries(${ProjectName} m)
 endif()
 
-add_executable(7.1 7.1.c)
+add_executable(srrstruc srrstruc.cpp)
 

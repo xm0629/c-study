@@ -157,17 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named 7.1
+# Target rules for targets named srrstruc
 
 # Build rule for target.
-7.1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 7.1
-.PHONY : 7.1
+srrstruc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 srrstruc
+.PHONY : srrstruc
 
 # fast build rule for target.
-7.1/fast:
-	$(MAKE) -f test/CMakeFiles/7.1.dir/build.make test/CMakeFiles/7.1.dir/build
-.PHONY : 7.1/fast
+srrstruc/fast:
+	$(MAKE) -f test/CMakeFiles/srrstruc.dir/build.make test/CMakeFiles/srrstruc.dir/build
+.PHONY : srrstruc/fast
 
 #=============================================================================
 # Target rules for targets named CGAL_test
@@ -194,7 +194,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... 7.1"
+	@echo "... srrstruc"
 	@echo "... CGAL_test"
 .PHONY : help
 
