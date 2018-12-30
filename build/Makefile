@@ -157,17 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named srrstruc
+# Target rules for targets named use_new
 
 # Build rule for target.
-srrstruc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 srrstruc
-.PHONY : srrstruc
+use_new: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 use_new
+.PHONY : use_new
 
 # fast build rule for target.
-srrstruc/fast:
-	$(MAKE) -f test/CMakeFiles/srrstruc.dir/build.make test/CMakeFiles/srrstruc.dir/build
-.PHONY : srrstruc/fast
+use_new/fast:
+	$(MAKE) -f test/CMakeFiles/use_new.dir/build.make test/CMakeFiles/use_new.dir/build
+.PHONY : use_new/fast
 
 #=============================================================================
 # Target rules for targets named CGAL_test
@@ -194,7 +194,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... srrstruc"
+	@echo "... use_new"
 	@echo "... CGAL_test"
 .PHONY : help
 

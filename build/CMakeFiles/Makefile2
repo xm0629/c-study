@@ -81,13 +81,13 @@ src/preinstall:
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
-test/all: test/CMakeFiles/srrstruc.dir/all
+test/all: test/CMakeFiles/use_new.dir/all
 test/all: test/CMakeFiles/CGAL_test.dir/all
 
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
-test/clean: test/CMakeFiles/srrstruc.dir/clean
+test/clean: test/CMakeFiles/use_new.dir/clean
 test/clean: test/CMakeFiles/CGAL_test.dir/clean
 
 .PHONY : test/clean
@@ -98,39 +98,39 @@ test/preinstall:
 .PHONY : test/preinstall
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/srrstruc.dir
+# Target rules for target test/CMakeFiles/use_new.dir
 
 # All Build rule for target.
-test/CMakeFiles/srrstruc.dir/all:
-	$(MAKE) -f test/CMakeFiles/srrstruc.dir/build.make test/CMakeFiles/srrstruc.dir/depend
-	$(MAKE) -f test/CMakeFiles/srrstruc.dir/build.make test/CMakeFiles/srrstruc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/Program/c-study/build/CMakeFiles --progress-num=3,4 "Built target srrstruc"
-.PHONY : test/CMakeFiles/srrstruc.dir/all
+test/CMakeFiles/use_new.dir/all:
+	$(MAKE) -f test/CMakeFiles/use_new.dir/build.make test/CMakeFiles/use_new.dir/depend
+	$(MAKE) -f test/CMakeFiles/use_new.dir/build.make test/CMakeFiles/use_new.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/Program/c-study/build/CMakeFiles --progress-num=3,4 "Built target use_new"
+.PHONY : test/CMakeFiles/use_new.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/srrstruc.dir/all
+all: test/CMakeFiles/use_new.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/srrstruc.dir/rule: cmake_check_build_system
+test/CMakeFiles/use_new.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/Program/c-study/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/srrstruc.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/use_new.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/Program/c-study/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/srrstruc.dir/rule
+.PHONY : test/CMakeFiles/use_new.dir/rule
 
 # Convenience name for target.
-srrstruc: test/CMakeFiles/srrstruc.dir/rule
+use_new: test/CMakeFiles/use_new.dir/rule
 
-.PHONY : srrstruc
-
-# clean rule for target.
-test/CMakeFiles/srrstruc.dir/clean:
-	$(MAKE) -f test/CMakeFiles/srrstruc.dir/build.make test/CMakeFiles/srrstruc.dir/clean
-.PHONY : test/CMakeFiles/srrstruc.dir/clean
+.PHONY : use_new
 
 # clean rule for target.
-clean: test/CMakeFiles/srrstruc.dir/clean
+test/CMakeFiles/use_new.dir/clean:
+	$(MAKE) -f test/CMakeFiles/use_new.dir/build.make test/CMakeFiles/use_new.dir/clean
+.PHONY : test/CMakeFiles/use_new.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/use_new.dir/clean
 
 .PHONY : clean
 

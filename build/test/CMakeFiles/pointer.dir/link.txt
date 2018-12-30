@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/pointer.dir/pointer.cpp.o  -o pointer  -L/usr/local/lib 
