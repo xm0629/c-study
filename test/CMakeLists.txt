@@ -4,5 +4,5 @@ if(HAVE_CGAL)
     target_link_libraries(${ProjectName} m)
 endif()
 
-add_executable(use_new use_new.cpp)
+add_executable(addpntrs addpntrs.cpp)
 

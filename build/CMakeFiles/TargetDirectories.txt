@@ -12,9 +12,9 @@
 /home/xm/Program/c-study/build/src/CMakeFiles/rebuild_cache.dir
 /home/xm/Program/c-study/build/test/CMakeFiles/install/strip.dir
 /home/xm/Program/c-study/build/test/CMakeFiles/install/local.dir
-/home/xm/Program/c-study/build/test/CMakeFiles/use_new.dir
-/home/xm/Program/c-study/build/test/CMakeFiles/rebuild_cache.dir
+/home/xm/Program/c-study/build/test/CMakeFiles/addpntrs.dir
+/home/xm/Program/c-study/build/test/CMakeFiles/list_install_components.dir
 /home/xm/Program/c-study/build/test/CMakeFiles/CGAL_test.dir
 /home/xm/Program/c-study/build/test/CMakeFiles/edit_cache.dir
-/home/xm/Program/c-study/build/test/CMakeFiles/list_install_components.dir
+/home/xm/Program/c-study/build/test/CMakeFiles/rebuild_cache.dir
 /home/xm/Program/c-study/build/test/CMakeFiles/install.dir

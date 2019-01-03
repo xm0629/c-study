@@ -157,17 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named use_new
+# Target rules for targets named addpntrs
 
 # Build rule for target.
-use_new: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 use_new
-.PHONY : use_new
+addpntrs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 addpntrs
+.PHONY : addpntrs
 
 # fast build rule for target.
-use_new/fast:
-	$(MAKE) -f test/CMakeFiles/use_new.dir/build.make test/CMakeFiles/use_new.dir/build
-.PHONY : use_new/fast
+addpntrs/fast:
+	$(MAKE) -f test/CMakeFiles/addpntrs.dir/build.make test/CMakeFiles/addpntrs.dir/build
+.PHONY : addpntrs/fast
 
 #=============================================================================
 # Target rules for targets named CGAL_test
@@ -194,7 +194,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... use_new"
+	@echo "... addpntrs"
 	@echo "... CGAL_test"
 .PHONY : help
 

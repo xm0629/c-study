@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/arraynew.dir/arraynew.cpp.o  -o arraynew  -L/usr/local/lib 

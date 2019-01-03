@@ -1,4 +1,4 @@
-// use_new.cpp 指针的一个新操作
+// use_new.cpp 指针的一个新操作, new 分配内存
 
 # include <iostream>
 
