@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/3.dir/3.c.o  -o 3  -L/usr/local/lib 

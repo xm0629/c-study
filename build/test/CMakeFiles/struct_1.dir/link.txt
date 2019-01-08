@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/struct_1.dir/struct_1.cpp.o  -o struct_1  -L/usr/local/lib 

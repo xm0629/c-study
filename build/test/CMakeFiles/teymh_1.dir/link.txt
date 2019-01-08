@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/teymh_1.dir/ymh_1.c.o  -o teymh_1  -L/usr/local/lib 

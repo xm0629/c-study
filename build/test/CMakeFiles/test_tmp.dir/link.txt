@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/test_tmp.dir/test_tmp.c.o  -o test_tmp  -L/usr/local/lib 

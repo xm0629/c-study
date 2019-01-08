@@ -80,15 +80,16 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Only default component available"
-.PHONY : list_install_components
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : list_install_components/fast
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -101,16 +102,15 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Only default component available"
+.PHONY : list_install_components
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
 
-.PHONY : rebuild_cache/fast
+.PHONY : list_install_components/fast
 
 # Special rule for the target install
 install: preinstall
@@ -157,19 +157,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/addpntrs.dir/rule:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/addpntrs.dir/rule
-.PHONY : test/CMakeFiles/addpntrs.dir/rule
+test/CMakeFiles/teymh_1.dir/rule:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/teymh_1.dir/rule
+.PHONY : test/CMakeFiles/teymh_1.dir/rule
 
 # Convenience name for target.
-addpntrs: test/CMakeFiles/addpntrs.dir/rule
+teymh_1: test/CMakeFiles/teymh_1.dir/rule
 
-.PHONY : addpntrs
+.PHONY : teymh_1
 
 # fast build rule for target.
-addpntrs/fast:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/addpntrs.dir/build.make test/CMakeFiles/addpntrs.dir/build
-.PHONY : addpntrs/fast
+teymh_1/fast:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/teymh_1.dir/build.make test/CMakeFiles/teymh_1.dir/build
+.PHONY : teymh_1/fast
 
 # Convenience name for target.
 test/CMakeFiles/CGAL_test.dir/rule:
@@ -213,32 +213,32 @@ CGAL_test.cpp.s:
 	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.s
 .PHONY : CGAL_test.cpp.s
 
-addpntrs.o: addpntrs.cpp.o
+ymh_1.o: ymh_1.c.o
 
-.PHONY : addpntrs.o
+.PHONY : ymh_1.o
 
 # target to build an object file
-addpntrs.cpp.o:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/addpntrs.dir/build.make test/CMakeFiles/addpntrs.dir/addpntrs.cpp.o
-.PHONY : addpntrs.cpp.o
+ymh_1.c.o:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/teymh_1.dir/build.make test/CMakeFiles/teymh_1.dir/ymh_1.c.o
+.PHONY : ymh_1.c.o
 
-addpntrs.i: addpntrs.cpp.i
+ymh_1.i: ymh_1.c.i
 
-.PHONY : addpntrs.i
+.PHONY : ymh_1.i
 
 # target to preprocess a source file
-addpntrs.cpp.i:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/addpntrs.dir/build.make test/CMakeFiles/addpntrs.dir/addpntrs.cpp.i
-.PHONY : addpntrs.cpp.i
+ymh_1.c.i:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/teymh_1.dir/build.make test/CMakeFiles/teymh_1.dir/ymh_1.c.i
+.PHONY : ymh_1.c.i
 
-addpntrs.s: addpntrs.cpp.s
+ymh_1.s: ymh_1.c.s
 
-.PHONY : addpntrs.s
+.PHONY : ymh_1.s
 
 # target to generate assembly for a file
-addpntrs.cpp.s:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/addpntrs.dir/build.make test/CMakeFiles/addpntrs.dir/addpntrs.cpp.s
-.PHONY : addpntrs.cpp.s
+ymh_1.c.s:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/teymh_1.dir/build.make test/CMakeFiles/teymh_1.dir/ymh_1.c.s
+.PHONY : ymh_1.c.s
 
 # Help Target
 help:
@@ -248,18 +248,18 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... addpntrs"
-	@echo "... list_install_components"
+	@echo "... teymh_1"
+	@echo "... rebuild_cache"
 	@echo "... CGAL_test"
 	@echo "... edit_cache"
-	@echo "... rebuild_cache"
+	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... CGAL_test.o"
 	@echo "... CGAL_test.i"
 	@echo "... CGAL_test.s"
-	@echo "... addpntrs.o"
-	@echo "... addpntrs.i"
-	@echo "... addpntrs.s"
+	@echo "... ymh_1.o"
+	@echo "... ymh_1.i"
+	@echo "... ymh_1.s"
 .PHONY : help
 
 

@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/num_test.dir/num_test.cpp.o  -o num_test  -L/usr/local/lib 
