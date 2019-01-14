@@ -157,17 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named teymh_1
+# Target rules for targets named sx_struct2
 
 # Build rule for target.
-teymh_1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 teymh_1
-.PHONY : teymh_1
+sx_struct2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sx_struct2
+.PHONY : sx_struct2
 
 # fast build rule for target.
-teymh_1/fast:
-	$(MAKE) -f test/CMakeFiles/teymh_1.dir/build.make test/CMakeFiles/teymh_1.dir/build
-.PHONY : teymh_1/fast
+sx_struct2/fast:
+	$(MAKE) -f test/CMakeFiles/sx_struct2.dir/build.make test/CMakeFiles/sx_struct2.dir/build
+.PHONY : sx_struct2/fast
 
 #=============================================================================
 # Target rules for targets named CGAL_test
@@ -194,7 +194,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... teymh_1"
+	@echo "... sx_struct2"
 	@echo "... CGAL_test"
 .PHONY : help
 

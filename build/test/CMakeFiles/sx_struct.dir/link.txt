@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/sx_struct.dir/sx_struct.c.o  -o sx_struct  -L/usr/local/lib 

@@ -4,5 +4,5 @@ if(HAVE_CGAL)
     target_link_libraries(${ProjectName} m)
 endif()
 
-add_executable(teymh_1  ymh_1.c)
+add_executable(sx_struct2 sx_struct2.c)
 

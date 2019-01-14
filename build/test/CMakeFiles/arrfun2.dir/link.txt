@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/arrfun2.dir/arrfun2.cpp.o  -o arrfun2  -L/usr/local/lib 

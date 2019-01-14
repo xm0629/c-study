@@ -81,13 +81,13 @@ src/preinstall:
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
-test/all: test/CMakeFiles/teymh_1.dir/all
+test/all: test/CMakeFiles/sx_struct2.dir/all
 test/all: test/CMakeFiles/CGAL_test.dir/all
 
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
-test/clean: test/CMakeFiles/teymh_1.dir/clean
+test/clean: test/CMakeFiles/sx_struct2.dir/clean
 test/clean: test/CMakeFiles/CGAL_test.dir/clean
 
 .PHONY : test/clean
@@ -98,39 +98,39 @@ test/preinstall:
 .PHONY : test/preinstall
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/teymh_1.dir
+# Target rules for target test/CMakeFiles/sx_struct2.dir
 
 # All Build rule for target.
-test/CMakeFiles/teymh_1.dir/all:
-	$(MAKE) -f test/CMakeFiles/teymh_1.dir/build.make test/CMakeFiles/teymh_1.dir/depend
-	$(MAKE) -f test/CMakeFiles/teymh_1.dir/build.make test/CMakeFiles/teymh_1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/Program/c-study/build/CMakeFiles --progress-num=3,4 "Built target teymh_1"
-.PHONY : test/CMakeFiles/teymh_1.dir/all
+test/CMakeFiles/sx_struct2.dir/all:
+	$(MAKE) -f test/CMakeFiles/sx_struct2.dir/build.make test/CMakeFiles/sx_struct2.dir/depend
+	$(MAKE) -f test/CMakeFiles/sx_struct2.dir/build.make test/CMakeFiles/sx_struct2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/Program/c-study/build/CMakeFiles --progress-num=3,4 "Built target sx_struct2"
+.PHONY : test/CMakeFiles/sx_struct2.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/teymh_1.dir/all
+all: test/CMakeFiles/sx_struct2.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/teymh_1.dir/rule: cmake_check_build_system
+test/CMakeFiles/sx_struct2.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/Program/c-study/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/teymh_1.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sx_struct2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/Program/c-study/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/teymh_1.dir/rule
+.PHONY : test/CMakeFiles/sx_struct2.dir/rule
 
 # Convenience name for target.
-teymh_1: test/CMakeFiles/teymh_1.dir/rule
+sx_struct2: test/CMakeFiles/sx_struct2.dir/rule
 
-.PHONY : teymh_1
-
-# clean rule for target.
-test/CMakeFiles/teymh_1.dir/clean:
-	$(MAKE) -f test/CMakeFiles/teymh_1.dir/build.make test/CMakeFiles/teymh_1.dir/clean
-.PHONY : test/CMakeFiles/teymh_1.dir/clean
+.PHONY : sx_struct2
 
 # clean rule for target.
-clean: test/CMakeFiles/teymh_1.dir/clean
+test/CMakeFiles/sx_struct2.dir/clean:
+	$(MAKE) -f test/CMakeFiles/sx_struct2.dir/build.make test/CMakeFiles/sx_struct2.dir/clean
+.PHONY : test/CMakeFiles/sx_struct2.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/sx_struct2.dir/clean
 
 .PHONY : clean
 

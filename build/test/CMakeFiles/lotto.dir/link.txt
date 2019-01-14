@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/lotto.dir/lotto.cpp.o  -o lotto  -L/usr/local/lib 

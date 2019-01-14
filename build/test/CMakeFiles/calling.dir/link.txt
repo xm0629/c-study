@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/calling.dir/calling.cpp.o  -o calling  -L/usr/local/lib 
