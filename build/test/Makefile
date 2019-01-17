@@ -80,18 +80,6 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -123,6 +111,18 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,19 +157,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/extern.dir/rule:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/extern.dir/rule
-.PHONY : test/CMakeFiles/extern.dir/rule
+test/CMakeFiles/debug.dir/rule:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/debug.dir/rule
+.PHONY : test/CMakeFiles/debug.dir/rule
 
 # Convenience name for target.
-extern: test/CMakeFiles/extern.dir/rule
+debug: test/CMakeFiles/debug.dir/rule
 
-.PHONY : extern
+.PHONY : debug
 
 # fast build rule for target.
-extern/fast:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/extern.dir/build.make test/CMakeFiles/extern.dir/build
-.PHONY : extern/fast
+debug/fast:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/debug.dir/build.make test/CMakeFiles/debug.dir/build
+.PHONY : debug/fast
 
 # Convenience name for target.
 test/CMakeFiles/CGAL_test.dir/rule:
@@ -213,32 +213,32 @@ CGAL_test.cpp.s:
 	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.s
 .PHONY : CGAL_test.cpp.s
 
-extern.o: extern.cpp.o
+debug.o: debug.cpp.o
 
-.PHONY : extern.o
+.PHONY : debug.o
 
 # target to build an object file
-extern.cpp.o:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/extern.dir/build.make test/CMakeFiles/extern.dir/extern.cpp.o
-.PHONY : extern.cpp.o
+debug.cpp.o:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/debug.dir/build.make test/CMakeFiles/debug.dir/debug.cpp.o
+.PHONY : debug.cpp.o
 
-extern.i: extern.cpp.i
+debug.i: debug.cpp.i
 
-.PHONY : extern.i
+.PHONY : debug.i
 
 # target to preprocess a source file
-extern.cpp.i:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/extern.dir/build.make test/CMakeFiles/extern.dir/extern.cpp.i
-.PHONY : extern.cpp.i
+debug.cpp.i:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/debug.dir/build.make test/CMakeFiles/debug.dir/debug.cpp.i
+.PHONY : debug.cpp.i
 
-extern.s: extern.cpp.s
+debug.s: debug.cpp.s
 
-.PHONY : extern.s
+.PHONY : debug.s
 
 # target to generate assembly for a file
-extern.cpp.s:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/extern.dir/build.make test/CMakeFiles/extern.dir/extern.cpp.s
-.PHONY : extern.cpp.s
+debug.cpp.s:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/debug.dir/build.make test/CMakeFiles/debug.dir/debug.cpp.s
+.PHONY : debug.cpp.s
 
 # Help Target
 help:
@@ -248,18 +248,18 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... extern"
-	@echo "... install"
+	@echo "... debug"
 	@echo "... CGAL_test"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
+	@echo "... install"
 	@echo "... CGAL_test.o"
 	@echo "... CGAL_test.i"
 	@echo "... CGAL_test.s"
-	@echo "... extern.o"
-	@echo "... extern.i"
-	@echo "... extern.s"
+	@echo "... debug.o"
+	@echo "... debug.i"
+	@echo "... debug.s"
 .PHONY : help
 
 

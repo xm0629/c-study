@@ -157,17 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named extern
+# Target rules for targets named debug
 
 # Build rule for target.
-extern: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 extern
-.PHONY : extern
+debug: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 debug
+.PHONY : debug
 
 # fast build rule for target.
-extern/fast:
-	$(MAKE) -f test/CMakeFiles/extern.dir/build.make test/CMakeFiles/extern.dir/build
-.PHONY : extern/fast
+debug/fast:
+	$(MAKE) -f test/CMakeFiles/debug.dir/build.make test/CMakeFiles/debug.dir/build
+.PHONY : debug/fast
 
 #=============================================================================
 # Target rules for targets named CGAL_test
@@ -194,7 +194,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... extern"
+	@echo "... debug"
 	@echo "... CGAL_test"
 .PHONY : help
 
