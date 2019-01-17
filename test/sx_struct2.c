@@ -2,12 +2,12 @@
     #include <stdlib.h>
     #define Size 5
 
-
     typedef struct Table{
         int * head;
         int length;
         int size;
     }table;
+    
     table initTable(){
         table t;
         t.head=(int*)malloc(Size*sizeof(int));

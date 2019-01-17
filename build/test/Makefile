@@ -80,6 +80,18 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -111,18 +123,6 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,19 +157,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/sx_struct2.dir/rule:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sx_struct2.dir/rule
-.PHONY : test/CMakeFiles/sx_struct2.dir/rule
+test/CMakeFiles/extern.dir/rule:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/extern.dir/rule
+.PHONY : test/CMakeFiles/extern.dir/rule
 
 # Convenience name for target.
-sx_struct2: test/CMakeFiles/sx_struct2.dir/rule
+extern: test/CMakeFiles/extern.dir/rule
 
-.PHONY : sx_struct2
+.PHONY : extern
 
 # fast build rule for target.
-sx_struct2/fast:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/sx_struct2.dir/build.make test/CMakeFiles/sx_struct2.dir/build
-.PHONY : sx_struct2/fast
+extern/fast:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/extern.dir/build.make test/CMakeFiles/extern.dir/build
+.PHONY : extern/fast
 
 # Convenience name for target.
 test/CMakeFiles/CGAL_test.dir/rule:
@@ -213,32 +213,32 @@ CGAL_test.cpp.s:
 	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.s
 .PHONY : CGAL_test.cpp.s
 
-sx_struct2.o: sx_struct2.c.o
+extern.o: extern.cpp.o
 
-.PHONY : sx_struct2.o
+.PHONY : extern.o
 
 # target to build an object file
-sx_struct2.c.o:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/sx_struct2.dir/build.make test/CMakeFiles/sx_struct2.dir/sx_struct2.c.o
-.PHONY : sx_struct2.c.o
+extern.cpp.o:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/extern.dir/build.make test/CMakeFiles/extern.dir/extern.cpp.o
+.PHONY : extern.cpp.o
 
-sx_struct2.i: sx_struct2.c.i
+extern.i: extern.cpp.i
 
-.PHONY : sx_struct2.i
+.PHONY : extern.i
 
 # target to preprocess a source file
-sx_struct2.c.i:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/sx_struct2.dir/build.make test/CMakeFiles/sx_struct2.dir/sx_struct2.c.i
-.PHONY : sx_struct2.c.i
+extern.cpp.i:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/extern.dir/build.make test/CMakeFiles/extern.dir/extern.cpp.i
+.PHONY : extern.cpp.i
 
-sx_struct2.s: sx_struct2.c.s
+extern.s: extern.cpp.s
 
-.PHONY : sx_struct2.s
+.PHONY : extern.s
 
 # target to generate assembly for a file
-sx_struct2.c.s:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/sx_struct2.dir/build.make test/CMakeFiles/sx_struct2.dir/sx_struct2.c.s
-.PHONY : sx_struct2.c.s
+extern.cpp.s:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/extern.dir/build.make test/CMakeFiles/extern.dir/extern.cpp.s
+.PHONY : extern.cpp.s
 
 # Help Target
 help:
@@ -248,18 +248,18 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... sx_struct2"
+	@echo "... extern"
+	@echo "... install"
 	@echo "... CGAL_test"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
-	@echo "... install"
 	@echo "... CGAL_test.o"
 	@echo "... CGAL_test.i"
 	@echo "... CGAL_test.s"
-	@echo "... sx_struct2.o"
-	@echo "... sx_struct2.i"
-	@echo "... sx_struct2.s"
+	@echo "... extern.o"
+	@echo "... extern.i"
+	@echo "... extern.s"
 .PHONY : help
 
 

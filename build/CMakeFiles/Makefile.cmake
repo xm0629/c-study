@@ -50,6 +50,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "test/CMakeFiles/sx_struct2.dir/DependInfo.cmake"
+  "test/CMakeFiles/extern.dir/DependInfo.cmake"
   "test/CMakeFiles/CGAL_test.dir/DependInfo.cmake"
   )

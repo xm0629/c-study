@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/solver_equation.dir/solver_equation.cpp.o  -o solver_equation  -L/usr/local/lib 

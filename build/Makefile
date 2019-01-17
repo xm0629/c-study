@@ -157,17 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named sx_struct2
+# Target rules for targets named extern
 
 # Build rule for target.
-sx_struct2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sx_struct2
-.PHONY : sx_struct2
+extern: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 extern
+.PHONY : extern
 
 # fast build rule for target.
-sx_struct2/fast:
-	$(MAKE) -f test/CMakeFiles/sx_struct2.dir/build.make test/CMakeFiles/sx_struct2.dir/build
-.PHONY : sx_struct2/fast
+extern/fast:
+	$(MAKE) -f test/CMakeFiles/extern.dir/build.make test/CMakeFiles/extern.dir/build
+.PHONY : extern/fast
 
 #=============================================================================
 # Target rules for targets named CGAL_test
@@ -194,7 +194,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... sx_struct2"
+	@echo "... extern"
 	@echo "... CGAL_test"
 .PHONY : help
 

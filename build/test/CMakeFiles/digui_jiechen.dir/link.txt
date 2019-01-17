@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/digui_jiechen.dir/digui_jiechen.cpp.o  -o digui_jiechen  -L/usr/local/lib 

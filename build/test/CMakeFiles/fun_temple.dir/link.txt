@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/fun_temple.dir/fun_temple.cpp.o  -o fun_temple  -L/usr/local/lib 
