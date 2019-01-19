@@ -157,17 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named debug
+# Target rules for targets named array_funname
 
 # Build rule for target.
-debug: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 debug
-.PHONY : debug
+array_funname: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 array_funname
+.PHONY : array_funname
 
 # fast build rule for target.
-debug/fast:
-	$(MAKE) -f test/CMakeFiles/debug.dir/build.make test/CMakeFiles/debug.dir/build
-.PHONY : debug/fast
+array_funname/fast:
+	$(MAKE) -f test/CMakeFiles/array_funname.dir/build.make test/CMakeFiles/array_funname.dir/build
+.PHONY : array_funname/fast
 
 #=============================================================================
 # Target rules for targets named CGAL_test
@@ -194,7 +194,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... debug"
+	@echo "... array_funname"
 	@echo "... CGAL_test"
 .PHONY : help
 

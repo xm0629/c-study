@@ -4,5 +4,5 @@ if(HAVE_CGAL)
     target_link_libraries(${ProjectName} m)
 endif()
 
-add_executable(debug debug.cpp)
+add_executable(array_funname array_funname.cpp)
 
