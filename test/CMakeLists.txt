@@ -4,5 +4,5 @@ if(HAVE_CGAL)
     target_link_libraries(${ProjectName} m)
 endif()
 
-add_executable(zhizhen_array3 zhizhen_array3.cpp)
+add_executable(class_fun class_fun.cpp)
 
