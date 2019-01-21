@@ -80,18 +80,6 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -123,6 +111,18 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,19 +157,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/zhizhen_array3.dir/rule:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/zhizhen_array3.dir/rule
-.PHONY : test/CMakeFiles/zhizhen_array3.dir/rule
+test/CMakeFiles/class_fun.dir/rule:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/class_fun.dir/rule
+.PHONY : test/CMakeFiles/class_fun.dir/rule
 
 # Convenience name for target.
-zhizhen_array3: test/CMakeFiles/zhizhen_array3.dir/rule
+class_fun: test/CMakeFiles/class_fun.dir/rule
 
-.PHONY : zhizhen_array3
+.PHONY : class_fun
 
 # fast build rule for target.
-zhizhen_array3/fast:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/zhizhen_array3.dir/build.make test/CMakeFiles/zhizhen_array3.dir/build
-.PHONY : zhizhen_array3/fast
+class_fun/fast:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/class_fun.dir/build.make test/CMakeFiles/class_fun.dir/build
+.PHONY : class_fun/fast
 
 # Convenience name for target.
 test/CMakeFiles/CGAL_test.dir/rule:
@@ -213,32 +213,32 @@ CGAL_test.cpp.s:
 	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.s
 .PHONY : CGAL_test.cpp.s
 
-zhizhen_array3.o: zhizhen_array3.cpp.o
+class_fun.o: class_fun.cpp.o
 
-.PHONY : zhizhen_array3.o
+.PHONY : class_fun.o
 
 # target to build an object file
-zhizhen_array3.cpp.o:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/zhizhen_array3.dir/build.make test/CMakeFiles/zhizhen_array3.dir/zhizhen_array3.cpp.o
-.PHONY : zhizhen_array3.cpp.o
+class_fun.cpp.o:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/class_fun.dir/build.make test/CMakeFiles/class_fun.dir/class_fun.cpp.o
+.PHONY : class_fun.cpp.o
 
-zhizhen_array3.i: zhizhen_array3.cpp.i
+class_fun.i: class_fun.cpp.i
 
-.PHONY : zhizhen_array3.i
+.PHONY : class_fun.i
 
 # target to preprocess a source file
-zhizhen_array3.cpp.i:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/zhizhen_array3.dir/build.make test/CMakeFiles/zhizhen_array3.dir/zhizhen_array3.cpp.i
-.PHONY : zhizhen_array3.cpp.i
+class_fun.cpp.i:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/class_fun.dir/build.make test/CMakeFiles/class_fun.dir/class_fun.cpp.i
+.PHONY : class_fun.cpp.i
 
-zhizhen_array3.s: zhizhen_array3.cpp.s
+class_fun.s: class_fun.cpp.s
 
-.PHONY : zhizhen_array3.s
+.PHONY : class_fun.s
 
 # target to generate assembly for a file
-zhizhen_array3.cpp.s:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/zhizhen_array3.dir/build.make test/CMakeFiles/zhizhen_array3.dir/zhizhen_array3.cpp.s
-.PHONY : zhizhen_array3.cpp.s
+class_fun.cpp.s:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/class_fun.dir/build.make test/CMakeFiles/class_fun.dir/class_fun.cpp.s
+.PHONY : class_fun.cpp.s
 
 # Help Target
 help:
@@ -248,18 +248,18 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... zhizhen_array3"
-	@echo "... install"
+	@echo "... class_fun"
 	@echo "... CGAL_test"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
+	@echo "... install"
 	@echo "... CGAL_test.o"
 	@echo "... CGAL_test.i"
 	@echo "... CGAL_test.s"
-	@echo "... zhizhen_array3.o"
-	@echo "... zhizhen_array3.i"
-	@echo "... zhizhen_array3.s"
+	@echo "... class_fun.o"
+	@echo "... class_fun.i"
+	@echo "... class_fun.s"
 .PHONY : help
 
 

@@ -50,6 +50,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "test/CMakeFiles/zhizhen_array3.dir/DependInfo.cmake"
+  "test/CMakeFiles/class_fun.dir/DependInfo.cmake"
   "test/CMakeFiles/CGAL_test.dir/DependInfo.cmake"
   )
