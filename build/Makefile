@@ -157,17 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named array_funname
+# Target rules for targets named zhizhen_array3
 
 # Build rule for target.
-array_funname: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 array_funname
-.PHONY : array_funname
+zhizhen_array3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 zhizhen_array3
+.PHONY : zhizhen_array3
 
 # fast build rule for target.
-array_funname/fast:
-	$(MAKE) -f test/CMakeFiles/array_funname.dir/build.make test/CMakeFiles/array_funname.dir/build
-.PHONY : array_funname/fast
+zhizhen_array3/fast:
+	$(MAKE) -f test/CMakeFiles/zhizhen_array3.dir/build.make test/CMakeFiles/zhizhen_array3.dir/build
+.PHONY : zhizhen_array3/fast
 
 #=============================================================================
 # Target rules for targets named CGAL_test
@@ -194,7 +194,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... array_funname"
+	@echo "... zhizhen_array3"
 	@echo "... CGAL_test"
 .PHONY : help
 

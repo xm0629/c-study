@@ -80,15 +80,17 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Only default component available"
-.PHONY : list_install_components
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -112,17 +114,15 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Only default component available"
+.PHONY : list_install_components
 
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,19 +157,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/array_funname.dir/rule:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/array_funname.dir/rule
-.PHONY : test/CMakeFiles/array_funname.dir/rule
+test/CMakeFiles/zhizhen_array3.dir/rule:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/zhizhen_array3.dir/rule
+.PHONY : test/CMakeFiles/zhizhen_array3.dir/rule
 
 # Convenience name for target.
-array_funname: test/CMakeFiles/array_funname.dir/rule
+zhizhen_array3: test/CMakeFiles/zhizhen_array3.dir/rule
 
-.PHONY : array_funname
+.PHONY : zhizhen_array3
 
 # fast build rule for target.
-array_funname/fast:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/array_funname.dir/build.make test/CMakeFiles/array_funname.dir/build
-.PHONY : array_funname/fast
+zhizhen_array3/fast:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/zhizhen_array3.dir/build.make test/CMakeFiles/zhizhen_array3.dir/build
+.PHONY : zhizhen_array3/fast
 
 # Convenience name for target.
 test/CMakeFiles/CGAL_test.dir/rule:
@@ -213,32 +213,32 @@ CGAL_test.cpp.s:
 	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.s
 .PHONY : CGAL_test.cpp.s
 
-array_funname.o: array_funname.cpp.o
+zhizhen_array3.o: zhizhen_array3.cpp.o
 
-.PHONY : array_funname.o
+.PHONY : zhizhen_array3.o
 
 # target to build an object file
-array_funname.cpp.o:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/array_funname.dir/build.make test/CMakeFiles/array_funname.dir/array_funname.cpp.o
-.PHONY : array_funname.cpp.o
+zhizhen_array3.cpp.o:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/zhizhen_array3.dir/build.make test/CMakeFiles/zhizhen_array3.dir/zhizhen_array3.cpp.o
+.PHONY : zhizhen_array3.cpp.o
 
-array_funname.i: array_funname.cpp.i
+zhizhen_array3.i: zhizhen_array3.cpp.i
 
-.PHONY : array_funname.i
+.PHONY : zhizhen_array3.i
 
 # target to preprocess a source file
-array_funname.cpp.i:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/array_funname.dir/build.make test/CMakeFiles/array_funname.dir/array_funname.cpp.i
-.PHONY : array_funname.cpp.i
+zhizhen_array3.cpp.i:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/zhizhen_array3.dir/build.make test/CMakeFiles/zhizhen_array3.dir/zhizhen_array3.cpp.i
+.PHONY : zhizhen_array3.cpp.i
 
-array_funname.s: array_funname.cpp.s
+zhizhen_array3.s: zhizhen_array3.cpp.s
 
-.PHONY : array_funname.s
+.PHONY : zhizhen_array3.s
 
 # target to generate assembly for a file
-array_funname.cpp.s:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/array_funname.dir/build.make test/CMakeFiles/array_funname.dir/array_funname.cpp.s
-.PHONY : array_funname.cpp.s
+zhizhen_array3.cpp.s:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/zhizhen_array3.dir/build.make test/CMakeFiles/zhizhen_array3.dir/zhizhen_array3.cpp.s
+.PHONY : zhizhen_array3.cpp.s
 
 # Help Target
 help:
@@ -248,18 +248,18 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... array_funname"
-	@echo "... list_install_components"
+	@echo "... zhizhen_array3"
+	@echo "... install"
 	@echo "... CGAL_test"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... CGAL_test.o"
 	@echo "... CGAL_test.i"
 	@echo "... CGAL_test.s"
-	@echo "... array_funname.o"
-	@echo "... array_funname.i"
-	@echo "... array_funname.s"
+	@echo "... zhizhen_array3.o"
+	@echo "... zhizhen_array3.i"
+	@echo "... zhizhen_array3.s"
 .PHONY : help
 
 
