@@ -1,15 +1,14 @@
-// 带参数的构造函数
+// 对象的复制
 
 # include <iostream>
 
 using namespace std;
 
-class Box
+class Box 
 {
     public:
-        Box(int, int, int); // 带参数的构造函数
+        Box(int=10, int=10, int=10);
         int volume();
-
 
     private:
         int height;
@@ -17,7 +16,6 @@ class Box
         int length;
 };
 
-//在类外定义带参数的构造函数
 Box::Box(int h, int w, int len)
 {
     height = h;
@@ -27,16 +25,17 @@ Box::Box(int h, int w, int len)
 
 int Box::volume()
 {
-    return height*width*length;
+    return (height*width*length);
 }
-
-
 
 int main()
 {
-    Box box1(12, 25, 30);
+    Box box1(15,30,25);
     cout << "The volume of box1 is " << box1.volume() << endl;
-    Box box2(15, 30, 21);
-    cout << "The volume of box2 is " << box2.volume() << endl;
+    
+    Box box2 = box1, box3 = box2; // box1 来 复制　box2 and box3
+    box2 = box1;
+    cout << "THe volume of box2 is " << box2.volume() << endl;
+    cout << "THe volume of box3 is " << box3.volume() << endl;
     return 0;
 }

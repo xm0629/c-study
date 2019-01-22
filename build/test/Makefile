@@ -157,19 +157,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/class_fun.dir/rule:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/class_fun.dir/rule
-.PHONY : test/CMakeFiles/class_fun.dir/rule
+test/CMakeFiles/class_static1.dir/rule:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/class_static1.dir/rule
+.PHONY : test/CMakeFiles/class_static1.dir/rule
 
 # Convenience name for target.
-class_fun: test/CMakeFiles/class_fun.dir/rule
+class_static1: test/CMakeFiles/class_static1.dir/rule
 
-.PHONY : class_fun
+.PHONY : class_static1
 
 # fast build rule for target.
-class_fun/fast:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/class_fun.dir/build.make test/CMakeFiles/class_fun.dir/build
-.PHONY : class_fun/fast
+class_static1/fast:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/class_static1.dir/build.make test/CMakeFiles/class_static1.dir/build
+.PHONY : class_static1/fast
 
 # Convenience name for target.
 test/CMakeFiles/CGAL_test.dir/rule:
@@ -213,32 +213,32 @@ CGAL_test.cpp.s:
 	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.s
 .PHONY : CGAL_test.cpp.s
 
-class_fun.o: class_fun.cpp.o
+class_static1.o: class_static1.cpp.o
 
-.PHONY : class_fun.o
+.PHONY : class_static1.o
 
 # target to build an object file
-class_fun.cpp.o:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/class_fun.dir/build.make test/CMakeFiles/class_fun.dir/class_fun.cpp.o
-.PHONY : class_fun.cpp.o
+class_static1.cpp.o:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/class_static1.dir/build.make test/CMakeFiles/class_static1.dir/class_static1.cpp.o
+.PHONY : class_static1.cpp.o
 
-class_fun.i: class_fun.cpp.i
+class_static1.i: class_static1.cpp.i
 
-.PHONY : class_fun.i
+.PHONY : class_static1.i
 
 # target to preprocess a source file
-class_fun.cpp.i:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/class_fun.dir/build.make test/CMakeFiles/class_fun.dir/class_fun.cpp.i
-.PHONY : class_fun.cpp.i
+class_static1.cpp.i:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/class_static1.dir/build.make test/CMakeFiles/class_static1.dir/class_static1.cpp.i
+.PHONY : class_static1.cpp.i
 
-class_fun.s: class_fun.cpp.s
+class_static1.s: class_static1.cpp.s
 
-.PHONY : class_fun.s
+.PHONY : class_static1.s
 
 # target to generate assembly for a file
-class_fun.cpp.s:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/class_fun.dir/build.make test/CMakeFiles/class_fun.dir/class_fun.cpp.s
-.PHONY : class_fun.cpp.s
+class_static1.cpp.s:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/class_static1.dir/build.make test/CMakeFiles/class_static1.dir/class_static1.cpp.s
+.PHONY : class_static1.cpp.s
 
 # Help Target
 help:
@@ -248,18 +248,18 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... class_fun"
-	@echo "... CGAL_test"
+	@echo "... class_static1"
 	@echo "... edit_cache"
+	@echo "... CGAL_test"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... CGAL_test.o"
 	@echo "... CGAL_test.i"
 	@echo "... CGAL_test.s"
-	@echo "... class_fun.o"
-	@echo "... class_fun.i"
-	@echo "... class_fun.s"
+	@echo "... class_static1.o"
+	@echo "... class_static1.i"
+	@echo "... class_static1.s"
 .PHONY : help
 
 
