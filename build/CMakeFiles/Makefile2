@@ -81,13 +81,13 @@ src/preinstall:
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
-test/all: test/CMakeFiles/class_static1.dir/all
+test/all: test/CMakeFiles/youyuan.dir/all
 test/all: test/CMakeFiles/CGAL_test.dir/all
 
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
-test/clean: test/CMakeFiles/class_static1.dir/clean
+test/clean: test/CMakeFiles/youyuan.dir/clean
 test/clean: test/CMakeFiles/CGAL_test.dir/clean
 
 .PHONY : test/clean
@@ -98,39 +98,39 @@ test/preinstall:
 .PHONY : test/preinstall
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/class_static1.dir
+# Target rules for target test/CMakeFiles/youyuan.dir
 
 # All Build rule for target.
-test/CMakeFiles/class_static1.dir/all:
-	$(MAKE) -f test/CMakeFiles/class_static1.dir/build.make test/CMakeFiles/class_static1.dir/depend
-	$(MAKE) -f test/CMakeFiles/class_static1.dir/build.make test/CMakeFiles/class_static1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/Program/c-study/build/CMakeFiles --progress-num=3,4 "Built target class_static1"
-.PHONY : test/CMakeFiles/class_static1.dir/all
+test/CMakeFiles/youyuan.dir/all:
+	$(MAKE) -f test/CMakeFiles/youyuan.dir/build.make test/CMakeFiles/youyuan.dir/depend
+	$(MAKE) -f test/CMakeFiles/youyuan.dir/build.make test/CMakeFiles/youyuan.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/Program/c-study/build/CMakeFiles --progress-num=3,4 "Built target youyuan"
+.PHONY : test/CMakeFiles/youyuan.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/class_static1.dir/all
+all: test/CMakeFiles/youyuan.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/class_static1.dir/rule: cmake_check_build_system
+test/CMakeFiles/youyuan.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/Program/c-study/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/class_static1.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/youyuan.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/Program/c-study/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/class_static1.dir/rule
+.PHONY : test/CMakeFiles/youyuan.dir/rule
 
 # Convenience name for target.
-class_static1: test/CMakeFiles/class_static1.dir/rule
+youyuan: test/CMakeFiles/youyuan.dir/rule
 
-.PHONY : class_static1
-
-# clean rule for target.
-test/CMakeFiles/class_static1.dir/clean:
-	$(MAKE) -f test/CMakeFiles/class_static1.dir/build.make test/CMakeFiles/class_static1.dir/clean
-.PHONY : test/CMakeFiles/class_static1.dir/clean
+.PHONY : youyuan
 
 # clean rule for target.
-clean: test/CMakeFiles/class_static1.dir/clean
+test/CMakeFiles/youyuan.dir/clean:
+	$(MAKE) -f test/CMakeFiles/youyuan.dir/build.make test/CMakeFiles/youyuan.dir/clean
+.PHONY : test/CMakeFiles/youyuan.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/youyuan.dir/clean
 
 .PHONY : clean
 

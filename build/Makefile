@@ -157,17 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named class_static1
+# Target rules for targets named youyuan
 
 # Build rule for target.
-class_static1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 class_static1
-.PHONY : class_static1
+youyuan: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 youyuan
+.PHONY : youyuan
 
 # fast build rule for target.
-class_static1/fast:
-	$(MAKE) -f test/CMakeFiles/class_static1.dir/build.make test/CMakeFiles/class_static1.dir/build
-.PHONY : class_static1/fast
+youyuan/fast:
+	$(MAKE) -f test/CMakeFiles/youyuan.dir/build.make test/CMakeFiles/youyuan.dir/build
+.PHONY : youyuan/fast
 
 #=============================================================================
 # Target rules for targets named CGAL_test
@@ -194,7 +194,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... class_static1"
+	@echo "... youyuan"
 	@echo "... CGAL_test"
 .PHONY : help
 
