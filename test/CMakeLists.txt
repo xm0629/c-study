@@ -4,5 +4,5 @@ if(HAVE_CGAL)
     target_link_libraries(${ProjectName} m)
 endif()
 
-add_executable(youyuan youyuan.cpp)
+add_executable(test_xigou test_xigou.cpp)
 

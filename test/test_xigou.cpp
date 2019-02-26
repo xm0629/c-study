@@ -1,6 +1,8 @@
-//　析构函数
+// 包含构造函数和析构函数
+
 # include <iostream>
-# include <cstring>
+# include <string>
+
 using namespace std;
 
 class Student
@@ -15,14 +17,14 @@ class Student
         }
         ~Student()
         {
-            cout << "Destructor call." << endl;
+            cout << "Destructor called." << endl;
         }
 
         void disply()
         {
             cout << "num: " << num << endl;
-            cout << "name: " << name << endl;
-            cout << "sex: " << sex << endl;   
+            cout << "mane: " << name << endl;
+            cout << "sex: " << sex << endl;
         }
     private:
         int num;
@@ -32,9 +34,9 @@ class Student
 
 int main()
 {
-    Student stu1(10100, "Wang Fi", 'F');
-    stu1.disply();
-    Student stu2(10011, "Zhang Li", 'M');
-    stu2.disply();
+    Student stud1(10010, "Wang Li", 'F');
+    stud1.disply();
+    Student stud2(10011, "zhang Li", 'M');
+    stud2.disply();
     return 0;
 }

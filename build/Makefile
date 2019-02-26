@@ -157,17 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named youyuan
+# Target rules for targets named test_xigou
 
 # Build rule for target.
-youyuan: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 youyuan
-.PHONY : youyuan
+test_xigou: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_xigou
+.PHONY : test_xigou
 
 # fast build rule for target.
-youyuan/fast:
-	$(MAKE) -f test/CMakeFiles/youyuan.dir/build.make test/CMakeFiles/youyuan.dir/build
-.PHONY : youyuan/fast
+test_xigou/fast:
+	$(MAKE) -f test/CMakeFiles/test_xigou.dir/build.make test/CMakeFiles/test_xigou.dir/build
+.PHONY : test_xigou/fast
 
 #=============================================================================
 # Target rules for targets named CGAL_test
@@ -194,7 +194,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... youyuan"
+	@echo "... test_xigou"
 	@echo "... CGAL_test"
 .PHONY : help
 

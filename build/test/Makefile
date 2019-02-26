@@ -157,19 +157,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/youyuan.dir/rule:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/youyuan.dir/rule
-.PHONY : test/CMakeFiles/youyuan.dir/rule
+test/CMakeFiles/test_xigou.dir/rule:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_xigou.dir/rule
+.PHONY : test/CMakeFiles/test_xigou.dir/rule
 
 # Convenience name for target.
-youyuan: test/CMakeFiles/youyuan.dir/rule
+test_xigou: test/CMakeFiles/test_xigou.dir/rule
 
-.PHONY : youyuan
+.PHONY : test_xigou
 
 # fast build rule for target.
-youyuan/fast:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/youyuan.dir/build.make test/CMakeFiles/youyuan.dir/build
-.PHONY : youyuan/fast
+test_xigou/fast:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/test_xigou.dir/build.make test/CMakeFiles/test_xigou.dir/build
+.PHONY : test_xigou/fast
 
 # Convenience name for target.
 test/CMakeFiles/CGAL_test.dir/rule:
@@ -213,32 +213,32 @@ CGAL_test.cpp.s:
 	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.s
 .PHONY : CGAL_test.cpp.s
 
-youyuan.o: youyuan.cpp.o
+test_xigou.o: test_xigou.cpp.o
 
-.PHONY : youyuan.o
+.PHONY : test_xigou.o
 
 # target to build an object file
-youyuan.cpp.o:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/youyuan.dir/build.make test/CMakeFiles/youyuan.dir/youyuan.cpp.o
-.PHONY : youyuan.cpp.o
+test_xigou.cpp.o:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/test_xigou.dir/build.make test/CMakeFiles/test_xigou.dir/test_xigou.cpp.o
+.PHONY : test_xigou.cpp.o
 
-youyuan.i: youyuan.cpp.i
+test_xigou.i: test_xigou.cpp.i
 
-.PHONY : youyuan.i
+.PHONY : test_xigou.i
 
 # target to preprocess a source file
-youyuan.cpp.i:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/youyuan.dir/build.make test/CMakeFiles/youyuan.dir/youyuan.cpp.i
-.PHONY : youyuan.cpp.i
+test_xigou.cpp.i:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/test_xigou.dir/build.make test/CMakeFiles/test_xigou.dir/test_xigou.cpp.i
+.PHONY : test_xigou.cpp.i
 
-youyuan.s: youyuan.cpp.s
+test_xigou.s: test_xigou.cpp.s
 
-.PHONY : youyuan.s
+.PHONY : test_xigou.s
 
 # target to generate assembly for a file
-youyuan.cpp.s:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/youyuan.dir/build.make test/CMakeFiles/youyuan.dir/youyuan.cpp.s
-.PHONY : youyuan.cpp.s
+test_xigou.cpp.s:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/test_xigou.dir/build.make test/CMakeFiles/test_xigou.dir/test_xigou.cpp.s
+.PHONY : test_xigou.cpp.s
 
 # Help Target
 help:
@@ -248,7 +248,7 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... youyuan"
+	@echo "... test_xigou"
 	@echo "... CGAL_test"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
@@ -257,9 +257,9 @@ help:
 	@echo "... CGAL_test.o"
 	@echo "... CGAL_test.i"
 	@echo "... CGAL_test.s"
-	@echo "... youyuan.o"
-	@echo "... youyuan.i"
-	@echo "... youyuan.s"
+	@echo "... test_xigou.o"
+	@echo "... test_xigou.i"
+	@echo "... test_xigou.s"
 .PHONY : help
 
 
