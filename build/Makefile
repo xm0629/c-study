@@ -157,17 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test_xigou
+# Target rules for targets named read_txt
 
 # Build rule for target.
-test_xigou: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_xigou
-.PHONY : test_xigou
+read_txt: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 read_txt
+.PHONY : read_txt
 
 # fast build rule for target.
-test_xigou/fast:
-	$(MAKE) -f test/CMakeFiles/test_xigou.dir/build.make test/CMakeFiles/test_xigou.dir/build
-.PHONY : test_xigou/fast
+read_txt/fast:
+	$(MAKE) -f test/CMakeFiles/read_txt.dir/build.make test/CMakeFiles/read_txt.dir/build
+.PHONY : read_txt/fast
 
 #=============================================================================
 # Target rules for targets named CGAL_test
@@ -194,7 +194,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test_xigou"
+	@echo "... read_txt"
 	@echo "... CGAL_test"
 .PHONY : help
 

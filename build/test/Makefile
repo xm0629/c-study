@@ -80,6 +80,18 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -111,18 +123,6 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,19 +157,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/test_xigou.dir/rule:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_xigou.dir/rule
-.PHONY : test/CMakeFiles/test_xigou.dir/rule
+test/CMakeFiles/read_txt.dir/rule:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/read_txt.dir/rule
+.PHONY : test/CMakeFiles/read_txt.dir/rule
 
 # Convenience name for target.
-test_xigou: test/CMakeFiles/test_xigou.dir/rule
+read_txt: test/CMakeFiles/read_txt.dir/rule
 
-.PHONY : test_xigou
+.PHONY : read_txt
 
 # fast build rule for target.
-test_xigou/fast:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/test_xigou.dir/build.make test/CMakeFiles/test_xigou.dir/build
-.PHONY : test_xigou/fast
+read_txt/fast:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/read_txt.dir/build.make test/CMakeFiles/read_txt.dir/build
+.PHONY : read_txt/fast
 
 # Convenience name for target.
 test/CMakeFiles/CGAL_test.dir/rule:
@@ -213,32 +213,32 @@ CGAL_test.cpp.s:
 	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.s
 .PHONY : CGAL_test.cpp.s
 
-test_xigou.o: test_xigou.cpp.o
+read_txt.o: read_txt.c.o
 
-.PHONY : test_xigou.o
+.PHONY : read_txt.o
 
 # target to build an object file
-test_xigou.cpp.o:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/test_xigou.dir/build.make test/CMakeFiles/test_xigou.dir/test_xigou.cpp.o
-.PHONY : test_xigou.cpp.o
+read_txt.c.o:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/read_txt.dir/build.make test/CMakeFiles/read_txt.dir/read_txt.c.o
+.PHONY : read_txt.c.o
 
-test_xigou.i: test_xigou.cpp.i
+read_txt.i: read_txt.c.i
 
-.PHONY : test_xigou.i
+.PHONY : read_txt.i
 
 # target to preprocess a source file
-test_xigou.cpp.i:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/test_xigou.dir/build.make test/CMakeFiles/test_xigou.dir/test_xigou.cpp.i
-.PHONY : test_xigou.cpp.i
+read_txt.c.i:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/read_txt.dir/build.make test/CMakeFiles/read_txt.dir/read_txt.c.i
+.PHONY : read_txt.c.i
 
-test_xigou.s: test_xigou.cpp.s
+read_txt.s: read_txt.c.s
 
-.PHONY : test_xigou.s
+.PHONY : read_txt.s
 
 # target to generate assembly for a file
-test_xigou.cpp.s:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/test_xigou.dir/build.make test/CMakeFiles/test_xigou.dir/test_xigou.cpp.s
-.PHONY : test_xigou.cpp.s
+read_txt.c.s:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/read_txt.dir/build.make test/CMakeFiles/read_txt.dir/read_txt.c.s
+.PHONY : read_txt.c.s
 
 # Help Target
 help:
@@ -248,18 +248,18 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... test_xigou"
+	@echo "... read_txt"
+	@echo "... install"
 	@echo "... CGAL_test"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
-	@echo "... install"
 	@echo "... CGAL_test.o"
 	@echo "... CGAL_test.i"
 	@echo "... CGAL_test.s"
-	@echo "... test_xigou.o"
-	@echo "... test_xigou.i"
-	@echo "... test_xigou.s"
+	@echo "... read_txt.o"
+	@echo "... read_txt.i"
+	@echo "... read_txt.s"
 .PHONY : help
 
 
