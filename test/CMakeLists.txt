@@ -1,8 +1,7 @@
 if(HAVE_CGAL)
     add_executable(CGAL_test CGAL_test.cpp)
     target_link_libraries(CGAL_test  ${CGAL_LIBRARIES})
-    target_link_libraries(${ProjectName} m)
-endif()
+    endif()
 
-add_executable(read_txt read_txt.c)
+add_executable(struct_zhizhen struct_zhizhen.cpp)
 

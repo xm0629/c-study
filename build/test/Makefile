@@ -80,18 +80,6 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -123,6 +111,18 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,19 +157,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/read_txt.dir/rule:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/read_txt.dir/rule
-.PHONY : test/CMakeFiles/read_txt.dir/rule
+test/CMakeFiles/struct_zhizhen.dir/rule:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/struct_zhizhen.dir/rule
+.PHONY : test/CMakeFiles/struct_zhizhen.dir/rule
 
 # Convenience name for target.
-read_txt: test/CMakeFiles/read_txt.dir/rule
+struct_zhizhen: test/CMakeFiles/struct_zhizhen.dir/rule
 
-.PHONY : read_txt
+.PHONY : struct_zhizhen
 
 # fast build rule for target.
-read_txt/fast:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/read_txt.dir/build.make test/CMakeFiles/read_txt.dir/build
-.PHONY : read_txt/fast
+struct_zhizhen/fast:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/struct_zhizhen.dir/build.make test/CMakeFiles/struct_zhizhen.dir/build
+.PHONY : struct_zhizhen/fast
 
 # Convenience name for target.
 test/CMakeFiles/CGAL_test.dir/rule:
@@ -213,32 +213,32 @@ CGAL_test.cpp.s:
 	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.s
 .PHONY : CGAL_test.cpp.s
 
-read_txt.o: read_txt.c.o
+struct_zhizhen.o: struct_zhizhen.cpp.o
 
-.PHONY : read_txt.o
+.PHONY : struct_zhizhen.o
 
 # target to build an object file
-read_txt.c.o:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/read_txt.dir/build.make test/CMakeFiles/read_txt.dir/read_txt.c.o
-.PHONY : read_txt.c.o
+struct_zhizhen.cpp.o:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/struct_zhizhen.dir/build.make test/CMakeFiles/struct_zhizhen.dir/struct_zhizhen.cpp.o
+.PHONY : struct_zhizhen.cpp.o
 
-read_txt.i: read_txt.c.i
+struct_zhizhen.i: struct_zhizhen.cpp.i
 
-.PHONY : read_txt.i
+.PHONY : struct_zhizhen.i
 
 # target to preprocess a source file
-read_txt.c.i:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/read_txt.dir/build.make test/CMakeFiles/read_txt.dir/read_txt.c.i
-.PHONY : read_txt.c.i
+struct_zhizhen.cpp.i:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/struct_zhizhen.dir/build.make test/CMakeFiles/struct_zhizhen.dir/struct_zhizhen.cpp.i
+.PHONY : struct_zhizhen.cpp.i
 
-read_txt.s: read_txt.c.s
+struct_zhizhen.s: struct_zhizhen.cpp.s
 
-.PHONY : read_txt.s
+.PHONY : struct_zhizhen.s
 
 # target to generate assembly for a file
-read_txt.c.s:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/read_txt.dir/build.make test/CMakeFiles/read_txt.dir/read_txt.c.s
-.PHONY : read_txt.c.s
+struct_zhizhen.cpp.s:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/struct_zhizhen.dir/build.make test/CMakeFiles/struct_zhizhen.dir/struct_zhizhen.cpp.s
+.PHONY : struct_zhizhen.cpp.s
 
 # Help Target
 help:
@@ -248,18 +248,18 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... read_txt"
-	@echo "... install"
-	@echo "... CGAL_test"
+	@echo "... struct_zhizhen"
 	@echo "... edit_cache"
+	@echo "... CGAL_test"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
+	@echo "... install"
 	@echo "... CGAL_test.o"
 	@echo "... CGAL_test.i"
 	@echo "... CGAL_test.s"
-	@echo "... read_txt.o"
-	@echo "... read_txt.i"
-	@echo "... read_txt.s"
+	@echo "... struct_zhizhen.o"
+	@echo "... struct_zhizhen.i"
+	@echo "... struct_zhizhen.s"
 .PHONY : help
 
 

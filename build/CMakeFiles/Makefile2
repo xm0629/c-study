@@ -81,13 +81,13 @@ src/preinstall:
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
-test/all: test/CMakeFiles/read_txt.dir/all
+test/all: test/CMakeFiles/struct_zhizhen.dir/all
 test/all: test/CMakeFiles/CGAL_test.dir/all
 
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
-test/clean: test/CMakeFiles/read_txt.dir/clean
+test/clean: test/CMakeFiles/struct_zhizhen.dir/clean
 test/clean: test/CMakeFiles/CGAL_test.dir/clean
 
 .PHONY : test/clean
@@ -98,39 +98,39 @@ test/preinstall:
 .PHONY : test/preinstall
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/read_txt.dir
+# Target rules for target test/CMakeFiles/struct_zhizhen.dir
 
 # All Build rule for target.
-test/CMakeFiles/read_txt.dir/all:
-	$(MAKE) -f test/CMakeFiles/read_txt.dir/build.make test/CMakeFiles/read_txt.dir/depend
-	$(MAKE) -f test/CMakeFiles/read_txt.dir/build.make test/CMakeFiles/read_txt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/Program/c-study/build/CMakeFiles --progress-num=3,4 "Built target read_txt"
-.PHONY : test/CMakeFiles/read_txt.dir/all
+test/CMakeFiles/struct_zhizhen.dir/all:
+	$(MAKE) -f test/CMakeFiles/struct_zhizhen.dir/build.make test/CMakeFiles/struct_zhizhen.dir/depend
+	$(MAKE) -f test/CMakeFiles/struct_zhizhen.dir/build.make test/CMakeFiles/struct_zhizhen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/Program/c-study/build/CMakeFiles --progress-num=3,4 "Built target struct_zhizhen"
+.PHONY : test/CMakeFiles/struct_zhizhen.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/read_txt.dir/all
+all: test/CMakeFiles/struct_zhizhen.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/read_txt.dir/rule: cmake_check_build_system
+test/CMakeFiles/struct_zhizhen.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/Program/c-study/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/read_txt.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/struct_zhizhen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/Program/c-study/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/read_txt.dir/rule
+.PHONY : test/CMakeFiles/struct_zhizhen.dir/rule
 
 # Convenience name for target.
-read_txt: test/CMakeFiles/read_txt.dir/rule
+struct_zhizhen: test/CMakeFiles/struct_zhizhen.dir/rule
 
-.PHONY : read_txt
-
-# clean rule for target.
-test/CMakeFiles/read_txt.dir/clean:
-	$(MAKE) -f test/CMakeFiles/read_txt.dir/build.make test/CMakeFiles/read_txt.dir/clean
-.PHONY : test/CMakeFiles/read_txt.dir/clean
+.PHONY : struct_zhizhen
 
 # clean rule for target.
-clean: test/CMakeFiles/read_txt.dir/clean
+test/CMakeFiles/struct_zhizhen.dir/clean:
+	$(MAKE) -f test/CMakeFiles/struct_zhizhen.dir/build.make test/CMakeFiles/struct_zhizhen.dir/clean
+.PHONY : test/CMakeFiles/struct_zhizhen.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/struct_zhizhen.dir/clean
 
 .PHONY : clean
 

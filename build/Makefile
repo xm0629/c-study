@@ -157,17 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named read_txt
+# Target rules for targets named struct_zhizhen
 
 # Build rule for target.
-read_txt: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 read_txt
-.PHONY : read_txt
+struct_zhizhen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 struct_zhizhen
+.PHONY : struct_zhizhen
 
 # fast build rule for target.
-read_txt/fast:
-	$(MAKE) -f test/CMakeFiles/read_txt.dir/build.make test/CMakeFiles/read_txt.dir/build
-.PHONY : read_txt/fast
+struct_zhizhen/fast:
+	$(MAKE) -f test/CMakeFiles/struct_zhizhen.dir/build.make test/CMakeFiles/struct_zhizhen.dir/build
+.PHONY : struct_zhizhen/fast
 
 #=============================================================================
 # Target rules for targets named CGAL_test
@@ -194,7 +194,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... read_txt"
+	@echo "... struct_zhizhen"
 	@echo "... CGAL_test"
 .PHONY : help
 
