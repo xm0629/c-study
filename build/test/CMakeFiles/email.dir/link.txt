@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/email.dir/email.cpp.o  -o email  -L/usr/local/lib 

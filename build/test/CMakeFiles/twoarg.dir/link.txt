@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/twoarg.dir/twoarg.cpp.o  -o twoarg  -L/usr/local/lib 
+/usr/bin/c++    -rdynamic CMakeFiles/twoarg.dir/twoarg.cpp.o  -o twoarg 

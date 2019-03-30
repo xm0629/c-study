@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/zhizhen_array2.dir/zhizhen_array2.cpp.o  -o zhizhen_array2  -L/usr/local/lib 

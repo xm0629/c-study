@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/array_fun.dir/array_fun.cpp.o  -o array_fun  -L/usr/local/lib 

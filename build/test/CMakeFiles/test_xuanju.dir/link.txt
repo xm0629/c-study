@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/test_xuanju.dir/test_xuanju.cpp.o  -o test_xuanju  -L/usr/local/lib 

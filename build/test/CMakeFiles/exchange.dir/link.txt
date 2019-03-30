@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/exchange.dir/exchange.cpp.o  -o exchange  -L/usr/local/lib 

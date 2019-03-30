@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/class_define.dir/class_define.cpp.o  -o class_define  -L/usr/local/lib 

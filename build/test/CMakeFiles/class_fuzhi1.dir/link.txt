@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/class_fuzhi1.dir/class_fuzhi1.cpp.o  -o class_fuzhi1  -L/usr/local/lib 

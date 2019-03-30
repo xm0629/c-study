@@ -81,14 +81,14 @@ src/preinstall:
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
-test/all: test/CMakeFiles/struct_zhizhen.dir/all
-test/all: test/CMakeFiles/CGAL_test.dir/all
+test/all: test/CMakeFiles/threshold.dir/all
+test/all: test/CMakeFiles/main.dir/all
 
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
-test/clean: test/CMakeFiles/struct_zhizhen.dir/clean
-test/clean: test/CMakeFiles/CGAL_test.dir/clean
+test/clean: test/CMakeFiles/threshold.dir/clean
+test/clean: test/CMakeFiles/main.dir/clean
 
 .PHONY : test/clean
 
@@ -98,76 +98,76 @@ test/preinstall:
 .PHONY : test/preinstall
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/struct_zhizhen.dir
+# Target rules for target test/CMakeFiles/threshold.dir
 
 # All Build rule for target.
-test/CMakeFiles/struct_zhizhen.dir/all:
-	$(MAKE) -f test/CMakeFiles/struct_zhizhen.dir/build.make test/CMakeFiles/struct_zhizhen.dir/depend
-	$(MAKE) -f test/CMakeFiles/struct_zhizhen.dir/build.make test/CMakeFiles/struct_zhizhen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/Program/c-study/build/CMakeFiles --progress-num=3,4 "Built target struct_zhizhen"
-.PHONY : test/CMakeFiles/struct_zhizhen.dir/all
+test/CMakeFiles/threshold.dir/all:
+	$(MAKE) -f test/CMakeFiles/threshold.dir/build.make test/CMakeFiles/threshold.dir/depend
+	$(MAKE) -f test/CMakeFiles/threshold.dir/build.make test/CMakeFiles/threshold.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/Program/c-study/build/CMakeFiles --progress-num=3,4 "Built target threshold"
+.PHONY : test/CMakeFiles/threshold.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/struct_zhizhen.dir/all
+all: test/CMakeFiles/threshold.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/struct_zhizhen.dir/rule: cmake_check_build_system
+test/CMakeFiles/threshold.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/Program/c-study/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/struct_zhizhen.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/threshold.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/Program/c-study/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/struct_zhizhen.dir/rule
+.PHONY : test/CMakeFiles/threshold.dir/rule
 
 # Convenience name for target.
-struct_zhizhen: test/CMakeFiles/struct_zhizhen.dir/rule
+threshold: test/CMakeFiles/threshold.dir/rule
 
-.PHONY : struct_zhizhen
-
-# clean rule for target.
-test/CMakeFiles/struct_zhizhen.dir/clean:
-	$(MAKE) -f test/CMakeFiles/struct_zhizhen.dir/build.make test/CMakeFiles/struct_zhizhen.dir/clean
-.PHONY : test/CMakeFiles/struct_zhizhen.dir/clean
+.PHONY : threshold
 
 # clean rule for target.
-clean: test/CMakeFiles/struct_zhizhen.dir/clean
+test/CMakeFiles/threshold.dir/clean:
+	$(MAKE) -f test/CMakeFiles/threshold.dir/build.make test/CMakeFiles/threshold.dir/clean
+.PHONY : test/CMakeFiles/threshold.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/threshold.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/CGAL_test.dir
+# Target rules for target test/CMakeFiles/main.dir
 
 # All Build rule for target.
-test/CMakeFiles/CGAL_test.dir/all:
-	$(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/depend
-	$(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/Program/c-study/build/CMakeFiles --progress-num=1,2 "Built target CGAL_test"
-.PHONY : test/CMakeFiles/CGAL_test.dir/all
+test/CMakeFiles/main.dir/all:
+	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/depend
+	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xm/Program/c-study/build/CMakeFiles --progress-num=1,2 "Built target main"
+.PHONY : test/CMakeFiles/main.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/CGAL_test.dir/all
+all: test/CMakeFiles/main.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/CGAL_test.dir/rule: cmake_check_build_system
+test/CMakeFiles/main.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/Program/c-study/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/CGAL_test.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xm/Program/c-study/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/CGAL_test.dir/rule
+.PHONY : test/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-CGAL_test: test/CMakeFiles/CGAL_test.dir/rule
+main: test/CMakeFiles/main.dir/rule
 
-.PHONY : CGAL_test
-
-# clean rule for target.
-test/CMakeFiles/CGAL_test.dir/clean:
-	$(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/clean
-.PHONY : test/CMakeFiles/CGAL_test.dir/clean
+.PHONY : main
 
 # clean rule for target.
-clean: test/CMakeFiles/CGAL_test.dir/clean
+test/CMakeFiles/main.dir/clean:
+	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/clean
+.PHONY : test/CMakeFiles/main.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/main.dir/clean
 
 .PHONY : clean
 

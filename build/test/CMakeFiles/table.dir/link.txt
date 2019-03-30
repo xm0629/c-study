@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/table.dir/table.cpp.o  -o table  -L/usr/local/lib 

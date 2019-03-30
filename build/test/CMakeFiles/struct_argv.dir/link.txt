@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/struct_argv.dir/struct_argv.cpp.o  -o struct_argv  -L/usr/local/lib 

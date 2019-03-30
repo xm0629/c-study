@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/qp_sort.dir/qp_sort.cpp.o  -o qp_sort  -L/usr/local/lib 

@@ -10,7 +10,9 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/local/include"
+  "."
+  "../include"
+  "/usr/local/share/OpenCV/include/opencv2"
   )
 
 # Targets to which this target links.

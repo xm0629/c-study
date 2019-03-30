@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/struct_zhizhen.dir/struct_zhizhen.cpp.o  -o struct_zhizhen  -L/usr/local/lib 

@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/protos.dir/protos.cpp.o  -o protos  -L/usr/local/lib 
+/usr/bin/c++    -rdynamic CMakeFiles/protos.dir/protos.cpp.o  -o protos 

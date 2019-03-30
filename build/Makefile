@@ -157,30 +157,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named struct_zhizhen
+# Target rules for targets named threshold
 
 # Build rule for target.
-struct_zhizhen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 struct_zhizhen
-.PHONY : struct_zhizhen
+threshold: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 threshold
+.PHONY : threshold
 
 # fast build rule for target.
-struct_zhizhen/fast:
-	$(MAKE) -f test/CMakeFiles/struct_zhizhen.dir/build.make test/CMakeFiles/struct_zhizhen.dir/build
-.PHONY : struct_zhizhen/fast
+threshold/fast:
+	$(MAKE) -f test/CMakeFiles/threshold.dir/build.make test/CMakeFiles/threshold.dir/build
+.PHONY : threshold/fast
 
 #=============================================================================
-# Target rules for targets named CGAL_test
+# Target rules for targets named main
 
 # Build rule for target.
-CGAL_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 CGAL_test
-.PHONY : CGAL_test
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-CGAL_test/fast:
-	$(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/build
-.PHONY : CGAL_test/fast
+main/fast:
+	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 # Help Target
 help:
@@ -194,8 +194,8 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... struct_zhizhen"
-	@echo "... CGAL_test"
+	@echo "... threshold"
+	@echo "... main"
 .PHONY : help
 
 

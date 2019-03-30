@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/string_xuanju.dir/string_xuanju.cpp.o  -o string_xuanju  -L/usr/local/lib 

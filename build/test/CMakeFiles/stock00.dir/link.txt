@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/stock00.dir/stock00.cpp.o  -o stock00  -L/home/xm/Program/c-study/build/lib 

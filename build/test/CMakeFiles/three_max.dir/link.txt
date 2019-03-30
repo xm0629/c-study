@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/three_max.dir/three_max.cpp.o  -o three_max  -L/usr/local/lib 

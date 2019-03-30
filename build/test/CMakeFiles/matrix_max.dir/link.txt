@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/matrix_max.dir/matrix_max.cpp.o  -o matrix_max  -L/usr/local/lib 

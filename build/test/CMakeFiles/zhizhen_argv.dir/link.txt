@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/zhizhen_argv.dir/zhizhen_argv.cpp.o  -o zhizhen_argv  -L/usr/local/lib 

@@ -56,6 +56,18 @@ CMAKE_BINARY_DIR = /home/xm/Program/c-study/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -68,17 +80,17 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -111,18 +123,6 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,88 +157,88 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/struct_zhizhen.dir/rule:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/struct_zhizhen.dir/rule
-.PHONY : test/CMakeFiles/struct_zhizhen.dir/rule
+test/CMakeFiles/threshold.dir/rule:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/threshold.dir/rule
+.PHONY : test/CMakeFiles/threshold.dir/rule
 
 # Convenience name for target.
-struct_zhizhen: test/CMakeFiles/struct_zhizhen.dir/rule
+threshold: test/CMakeFiles/threshold.dir/rule
 
-.PHONY : struct_zhizhen
+.PHONY : threshold
 
 # fast build rule for target.
-struct_zhizhen/fast:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/struct_zhizhen.dir/build.make test/CMakeFiles/struct_zhizhen.dir/build
-.PHONY : struct_zhizhen/fast
+threshold/fast:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/threshold.dir/build.make test/CMakeFiles/threshold.dir/build
+.PHONY : threshold/fast
 
 # Convenience name for target.
-test/CMakeFiles/CGAL_test.dir/rule:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/CGAL_test.dir/rule
-.PHONY : test/CMakeFiles/CGAL_test.dir/rule
+test/CMakeFiles/main.dir/rule:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/main.dir/rule
+.PHONY : test/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-CGAL_test: test/CMakeFiles/CGAL_test.dir/rule
+main: test/CMakeFiles/main.dir/rule
 
-.PHONY : CGAL_test
+.PHONY : main
 
 # fast build rule for target.
-CGAL_test/fast:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/build
-.PHONY : CGAL_test/fast
+main/fast:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/build
+.PHONY : main/fast
 
-CGAL_test.o: CGAL_test.cpp.o
+main.o: main.cpp.o
 
-.PHONY : CGAL_test.o
-
-# target to build an object file
-CGAL_test.cpp.o:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.o
-.PHONY : CGAL_test.cpp.o
-
-CGAL_test.i: CGAL_test.cpp.i
-
-.PHONY : CGAL_test.i
-
-# target to preprocess a source file
-CGAL_test.cpp.i:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.i
-.PHONY : CGAL_test.cpp.i
-
-CGAL_test.s: CGAL_test.cpp.s
-
-.PHONY : CGAL_test.s
-
-# target to generate assembly for a file
-CGAL_test.cpp.s:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/CGAL_test.cpp.s
-.PHONY : CGAL_test.cpp.s
-
-struct_zhizhen.o: struct_zhizhen.cpp.o
-
-.PHONY : struct_zhizhen.o
+.PHONY : main.o
 
 # target to build an object file
-struct_zhizhen.cpp.o:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/struct_zhizhen.dir/build.make test/CMakeFiles/struct_zhizhen.dir/struct_zhizhen.cpp.o
-.PHONY : struct_zhizhen.cpp.o
+main.cpp.o:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-struct_zhizhen.i: struct_zhizhen.cpp.i
+main.i: main.cpp.i
 
-.PHONY : struct_zhizhen.i
+.PHONY : main.i
 
 # target to preprocess a source file
-struct_zhizhen.cpp.i:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/struct_zhizhen.dir/build.make test/CMakeFiles/struct_zhizhen.dir/struct_zhizhen.cpp.i
-.PHONY : struct_zhizhen.cpp.i
+main.cpp.i:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-struct_zhizhen.s: struct_zhizhen.cpp.s
+main.s: main.cpp.s
 
-.PHONY : struct_zhizhen.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-struct_zhizhen.cpp.s:
-	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/struct_zhizhen.dir/build.make test/CMakeFiles/struct_zhizhen.dir/struct_zhizhen.cpp.s
-.PHONY : struct_zhizhen.cpp.s
+main.cpp.s:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+threshold.o: threshold.cpp.o
+
+.PHONY : threshold.o
+
+# target to build an object file
+threshold.cpp.o:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/threshold.dir/build.make test/CMakeFiles/threshold.dir/threshold.cpp.o
+.PHONY : threshold.cpp.o
+
+threshold.i: threshold.cpp.i
+
+.PHONY : threshold.i
+
+# target to preprocess a source file
+threshold.cpp.i:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/threshold.dir/build.make test/CMakeFiles/threshold.dir/threshold.cpp.i
+.PHONY : threshold.cpp.i
+
+threshold.s: threshold.cpp.s
+
+.PHONY : threshold.s
+
+# target to generate assembly for a file
+threshold.cpp.s:
+	cd /home/xm/Program/c-study/build && $(MAKE) -f test/CMakeFiles/threshold.dir/build.make test/CMakeFiles/threshold.dir/threshold.cpp.s
+.PHONY : threshold.cpp.s
 
 # Help Target
 help:
@@ -246,20 +246,20 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... struct_zhizhen"
+	@echo "... install/strip"
+	@echo "... threshold"
+	@echo "... install"
+	@echo "... main"
 	@echo "... edit_cache"
-	@echo "... CGAL_test"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
-	@echo "... install"
-	@echo "... CGAL_test.o"
-	@echo "... CGAL_test.i"
-	@echo "... CGAL_test.s"
-	@echo "... struct_zhizhen.o"
-	@echo "... struct_zhizhen.i"
-	@echo "... struct_zhizhen.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... threshold.o"
+	@echo "... threshold.i"
+	@echo "... threshold.s"
 .PHONY : help
 
 

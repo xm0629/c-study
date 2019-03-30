@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/string_array.dir/string_array.cpp.o  -o string_array  -L/usr/local/lib 

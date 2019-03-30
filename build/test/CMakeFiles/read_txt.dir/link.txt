@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/read_txt.dir/read_txt.c.o  -o read_txt  -L/usr/local/lib 

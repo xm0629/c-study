@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/fun_struct.dir/fun_struct.cpp.o  -o fun_struct  -L/usr/local/lib 

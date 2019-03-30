@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/xigou_fun.dir/xigou_fun.cpp.o  -o xigou_fun  -L/usr/local/lib 
